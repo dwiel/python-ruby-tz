@@ -1,0 +1,6 @@
+python-ruby-tz provides a dictionary tz_names that maps ruby's TimeZone names
+to number of seconds offset from UTC the zone is.
+
+>>> from ruby_tz import tz_names
+>>> print tz_names['Eastern Time (US & Canada)']
+-18000
