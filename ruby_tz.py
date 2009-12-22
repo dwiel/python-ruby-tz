@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-tz_names is a dictionary which maps Ruby TimeZone names to offset from UTC 
-in seconds
+# tz_names is a dictionary which maps Ruby TimeZone names to offset from UTC 
+# in seconds
 
 tzs =    [[-43200, "International Date Line West" ],
           [-39600, "Midway Island", "Samoa" ],
