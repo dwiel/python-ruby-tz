@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-
-# tz_names is a dictionary which maps Ruby TimeZone names to offset from UTC 
-# in seconds
+# -*- coding: utf-8 -*-
 
 tzs =    [[-43200, "International Date Line West" ],
           [-39600, "Midway Island", "Samoa" ],
@@ -20,7 +18,7 @@ tzs =    [[-43200, "International Date Line West" ],
           [ -7200, "Mid-Atlantic" ],
           [ -3600, "Azores", "Cape Verde Is." ],
           [     0, "Dublin", "Edinburgh", "Lisbon", "London", "Casablanca",
-                   "Monrovia" ],
+                   "Monrovia", "UTC"],
           [  3600, "Belgrade", "Bratislava", "Budapest", "Ljubljana", "Prague",
                    "Sarajevo", "Skopje", "Warsaw", "Zagreb", "Brussels",
                    "Copenhagen", "Madrid", "Paris", "Amsterdam", "Berlin",
@@ -58,4 +56,5 @@ for row in tzs :
 	for name in row[1:] :
 		tz_names[name] = row[0]
 
-# print tz_names
+if __name__ == '__main__' :
+  print tz_names
